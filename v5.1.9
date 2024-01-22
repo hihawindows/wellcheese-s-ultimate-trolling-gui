@@ -50,6 +50,16 @@ local TextLabel_5 = Instance.new("TextLabel")
 local TextBox_2 = Instance.new("TextBox")
 local UICorner_19 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
+local ticketchanger = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local textboxticketsneeded = Instance.new("TextBox")
+local textboxusernameneeded = Instance.new("TextBox")
+local sumbusernametype = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local textboxticketsall = Instance.new("TextBox")
+local sumballtype = Instance.new("TextButton")
+local tickchanger = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
 local wutglogo = Instance.new("ImageLabel")
 
 --Properties:
@@ -82,7 +92,6 @@ wutgmain.BorderColor3 = Color3.fromRGB(255, 255, 255)
 wutgmain.BorderSizePixel = 3
 wutgmain.Position = UDim2.new(0.266064674, 0, 0.16112946, 0)
 wutgmain.Size = UDim2.new(0.466981143, 0, 0.586005807, 0)
-wutgmain.Visible = false
 
 hardcrashbutton.Name = "hardcrashbutton"
 hardcrashbutton.Parent = wutgmain
@@ -490,6 +499,129 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
+ticketchanger.Name = "ticketchanger"
+ticketchanger.Parent = wutgmain
+ticketchanger.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+ticketchanger.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ticketchanger.BorderSizePixel = 0
+ticketchanger.Position = UDim2.new(0, 0, -0.246268675, 0)
+ticketchanger.Size = UDim2.new(1, 0, 0.25373137, 0)
+ticketchanger.Visible = false
+
+TextLabel_6.Parent = ticketchanger
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0144300144, 0, 0.107843138, 0)
+TextLabel_6.Size = UDim2.new(0.574314594, 0, 0.294117659, 0)
+TextLabel_6.Font = Enum.Font.Gotham
+TextLabel_6.Text = "Ticket Changer on Specific Player (Full Username Needed)"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+textboxticketsneeded.Name = "textboxticketsneeded"
+textboxticketsneeded.Parent = ticketchanger
+textboxticketsneeded.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+textboxticketsneeded.BorderColor3 = Color3.fromRGB(0, 0, 0)
+textboxticketsneeded.BorderSizePixel = 0
+textboxticketsneeded.Position = UDim2.new(0.588744581, 0, 0.137254909, 0)
+textboxticketsneeded.Size = UDim2.new(0.177489176, 0, 0.235294119, 0)
+textboxticketsneeded.Font = Enum.Font.Gotham
+textboxticketsneeded.PlaceholderText = "Number of Tickets"
+textboxticketsneeded.Text = ""
+textboxticketsneeded.TextColor3 = Color3.fromRGB(0, 0, 0)
+textboxticketsneeded.TextSize = 14.000
+
+textboxusernameneeded.Name = "textboxusernameneeded"
+textboxusernameneeded.Parent = ticketchanger
+textboxusernameneeded.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+textboxusernameneeded.BorderColor3 = Color3.fromRGB(0, 0, 0)
+textboxusernameneeded.BorderSizePixel = 0
+textboxusernameneeded.Position = UDim2.new(0.797979772, 0, 0.137254909, 0)
+textboxusernameneeded.Size = UDim2.new(0.115440115, 0, 0.235294119, 0)
+textboxusernameneeded.Font = Enum.Font.Gotham
+textboxusernameneeded.PlaceholderText = "Username"
+textboxusernameneeded.Text = ""
+textboxusernameneeded.TextColor3 = Color3.fromRGB(0, 0, 0)
+textboxusernameneeded.TextSize = 14.000
+
+sumbusernametype.Name = "sumbusernametype"
+sumbusernametype.Parent = ticketchanger
+sumbusernametype.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+sumbusernametype.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sumbusernametype.BorderSizePixel = 0
+sumbusernametype.Position = UDim2.new(0.933621407, 0, 0.186274514, 0)
+sumbusernametype.Size = UDim2.new(0.0620490611, 0, 0.127450988, 0)
+sumbusernametype.Font = Enum.Font.Gotham
+sumbusernametype.Text = "Submit"
+sumbusernametype.TextColor3 = Color3.fromRGB(255, 255, 255)
+sumbusernametype.TextScaled = true
+sumbusernametype.TextSize = 14.000
+sumbusernametype.TextWrapped = true
+
+TextLabel_7.Parent = ticketchanger
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0144300144, 0, 0.470588237, 0)
+TextLabel_7.Size = UDim2.new(0.574314594, 0, 0.294117659, 0)
+TextLabel_7.Font = Enum.Font.Gotham
+TextLabel_7.Text = "Change Ticket All"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+textboxticketsall.Name = "textboxticketsall"
+textboxticketsall.Parent = ticketchanger
+textboxticketsall.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+textboxticketsall.BorderColor3 = Color3.fromRGB(0, 0, 0)
+textboxticketsall.BorderSizePixel = 0
+textboxticketsall.Position = UDim2.new(0.588744581, 0, 0.529411793, 0)
+textboxticketsall.Size = UDim2.new(0.177489176, 0, 0.235294119, 0)
+textboxticketsall.Font = Enum.Font.Gotham
+textboxticketsall.PlaceholderText = "Number of Tickets"
+textboxticketsall.Text = ""
+textboxticketsall.TextColor3 = Color3.fromRGB(0, 0, 0)
+textboxticketsall.TextSize = 14.000
+
+sumballtype.Name = "sumballtype"
+sumballtype.Parent = ticketchanger
+sumballtype.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+sumballtype.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sumballtype.BorderSizePixel = 0
+sumballtype.Position = UDim2.new(0.806637287, 0, 0.578431368, 0)
+sumballtype.Size = UDim2.new(0.0620490611, 0, 0.127450988, 0)
+sumballtype.Font = Enum.Font.Gotham
+sumballtype.Text = "Submit"
+sumballtype.TextColor3 = Color3.fromRGB(255, 255, 255)
+sumballtype.TextScaled = true
+sumballtype.TextSize = 14.000
+sumballtype.TextWrapped = true
+
+tickchanger.Name = "tickchanger"
+tickchanger.Parent = wutgmain
+tickchanger.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+tickchanger.BackgroundTransparency = 0.500
+tickchanger.BorderColor3 = Color3.fromRGB(79, 79, 79)
+tickchanger.BorderSizePixel = 5
+tickchanger.Position = UDim2.new(0.872999907, 0, 0.0283424444, 0)
+tickchanger.Size = UDim2.new(0.122670434, 0, 0.065396212, 0)
+tickchanger.ZIndex = 2
+tickchanger.Font = Enum.Font.GothamMedium
+tickchanger.Text = "TICKET CHANGER"
+tickchanger.TextColor3 = Color3.fromRGB(255, 255, 255)
+tickchanger.TextScaled = true
+tickchanger.TextSize = 25.000
+tickchanger.TextWrapped = true
+
+UICorner_20.CornerRadius = UDim.new(0, 36)
+UICorner_20.Parent = tickchanger
+
 wutglogo.Name = "wutglogo"
 wutglogo.Parent = WUTG
 wutglogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -503,7 +635,7 @@ wutglogo.ScaleType = Enum.ScaleType.Crop
 
 -- Scripts:
 
-local function CPLLU_fake_script() -- wutgmain.Dragging 
+local function FBIE_fake_script() -- wutgmain.Dragging 
 	local script = Instance.new('LocalScript', wutgmain)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -560,8 +692,8 @@ local function CPLLU_fake_script() -- wutgmain.Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(CPLLU_fake_script)()
-local function SFHBCZM_fake_script() -- wutgmain.ExecuteHandler 
+coroutine.wrap(FBIE_fake_script)()
+local function EZENG_fake_script() -- wutgmain.ExecuteHandler 
 	local script = Instance.new('LocalScript', wutgmain)
 
 	--Values
@@ -1808,16 +1940,16 @@ local function SFHBCZM_fake_script() -- wutgmain.ExecuteHandler
 	itemexecutor.MouseButton1Up:Connect(gunsoundexecute)
 	---------------------------------------------------------------
 end
-coroutine.wrap(SFHBCZM_fake_script)()
-local function WLMVIG_fake_script() -- rpnamebutton.LocalScript 
+coroutine.wrap(EZENG_fake_script)()
+local function ZEBHW_fake_script() -- rpnamebutton.LocalScript 
 	local script = Instance.new('LocalScript', rpnamebutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.rpname.Visible = not script.Parent.Parent.rpname.Visible
 	end)
 end
-coroutine.wrap(WLMVIG_fake_script)()
-local function MUTMQKT_fake_script() -- TextBox_2.handlerpname 
+coroutine.wrap(ZEBHW_fake_script)()
+local function SEQF_fake_script() -- TextBox_2.handlerpname 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local playerService = game:GetService("Players")
@@ -1854,8 +1986,49 @@ local function MUTMQKT_fake_script() -- TextBox_2.handlerpname
 	
 	playerService.PlayerAdded:Connect(connectPlayer)
 end
-coroutine.wrap(MUTMQKT_fake_script)()
-local function DNETA_fake_script() -- WUTG.LocalScript 
+coroutine.wrap(SEQF_fake_script)()
+local function MSNYKV_fake_script() -- ticketchanger.handlertickeychangker 
+	local script = Instance.new('LocalScript', ticketchanger)
+
+	-- handle username
+	local usernametext = script.Parent.textboxusernameneeded
+	local ticketstext = script.Parent.textboxticketsneeded
+	local Players = game:GetService("Players")
+	
+	script.Parent.sumbusernametype.MouseButton1Click:Connect(function()
+		game:GetService('ReplicatedStorage')['ACS_Engine'].SignalEvents.Refil:FireServer(game:GetService('Players')[usernametext.Text]['leaderstats'].Tickets.Value, tonumber(ticketstext.Text))
+	end)
+	
+	-- handle all
+	local function handleall()
+		for _, player in pairs(Players:GetPlayers()) do
+			local leaderstats = player:FindFirstChild("leaderstats")
+	
+			if leaderstats then
+				local Tickets = leaderstats:FindFirstChild("Tickets")
+	
+				if Tickets then
+					game:GetService('ReplicatedStorage')['ACS_Engine'].SignalEvents.Refil:FireServer(Tickets.Value, tonumber(script.Parent.textboxticketsall.Text))
+				end
+			end
+		end
+	end
+	
+	script.Parent.sumballtype.MouseButton1Click:Connect(handleall)
+end
+coroutine.wrap(MSNYKV_fake_script)()
+local function MSCBTB_fake_script() -- tickchanger.LocalScript 
+	local script = Instance.new('LocalScript', tickchanger)
+
+	local Frame = script.Parent.Parent.ticketchanger
+	local Button = script.Parent
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+end
+coroutine.wrap(MSCBTB_fake_script)()
+local function GABTZZ_fake_script() -- WUTG.LocalScript 
 	local script = Instance.new('LocalScript', WUTG)
 
 	local SGui = script.Parent
@@ -1866,8 +2039,8 @@ local function DNETA_fake_script() -- WUTG.LocalScript
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(DNETA_fake_script)()
-local function WYPVUT_fake_script() -- WUTG.handletweeningimage 
+coroutine.wrap(GABTZZ_fake_script)()
+local function RDKUO_fake_script() -- WUTG.handletweeningimage 
 	local script = Instance.new('LocalScript', WUTG)
 
 	local TweenService = game:GetService("TweenService")
@@ -1887,4 +2060,4 @@ local function WYPVUT_fake_script() -- WUTG.handletweeningimage
 	script.Parent.wutglogo:Destroy()
 	script.Parent.oben.Visible = true
 end
-coroutine.wrap(WYPVUT_fake_script)()
+coroutine.wrap(RDKUO_fake_script)()
