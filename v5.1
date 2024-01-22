@@ -1,0 +1,1890 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local WUTG = Instance.new("ScreenGui")
+local oben = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local wutgmain = Instance.new("Frame")
+local hardcrashbutton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local item = Instance.new("Frame")
+local itemtext = Instance.new("TextLabel")
+local execute = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local harmonicabutton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local infammobutton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local suitbutton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local earringbutton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local gunsoundsbutton = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_11 = Instance.new("UICorner")
+local submitgearbutton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local xbutton = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local f3xbutton = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local xbutton_2 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local divider = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local rpnamebutton = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local divider_2 = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local rpname = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_19 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local wutglogo = Instance.new("ImageLabel")
+
+--Properties:
+
+WUTG.Name = "WUTG"
+WUTG.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WUTG.ResetOnSpawn = false
+
+oben.Name = "oben"
+oben.Parent = WUTG
+oben.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+oben.BorderColor3 = Color3.fromRGB(255, 255, 255)
+oben.BorderSizePixel = 3
+oben.Position = UDim2.new(0.451431274, 0, 0.0875459537, 0)
+oben.Size = UDim2.new(0.078840971, 0, 0.0364431478, 0)
+oben.Visible = false
+oben.Font = Enum.Font.GothamMedium
+oben.Text = "OPEN/CLOSE"
+oben.TextColor3 = Color3.fromRGB(255, 255, 255)
+oben.TextScaled = true
+oben.TextSize = 35.000
+oben.TextWrapped = true
+
+UICorner.Parent = oben
+
+wutgmain.Name = "wutgmain"
+wutgmain.Parent = WUTG
+wutgmain.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+wutgmain.BorderColor3 = Color3.fromRGB(255, 255, 255)
+wutgmain.BorderSizePixel = 3
+wutgmain.Position = UDim2.new(0.266064674, 0, 0.16112946, 0)
+wutgmain.Size = UDim2.new(0.466981143, 0, 0.586005807, 0)
+wutgmain.Visible = false
+
+hardcrashbutton.Name = "hardcrashbutton"
+hardcrashbutton.Parent = wutgmain
+hardcrashbutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+hardcrashbutton.BackgroundTransparency = 0.500
+hardcrashbutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+hardcrashbutton.BorderSizePixel = 5
+hardcrashbutton.Position = UDim2.new(0.543695867, 0, 0.223533913, 0)
+hardcrashbutton.Size = UDim2.new(0.319915265, 0, 0.111498259, 0)
+hardcrashbutton.ZIndex = 2
+hardcrashbutton.Font = Enum.Font.GothamMedium
+hardcrashbutton.Text = "HARDCRASH"
+hardcrashbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+hardcrashbutton.TextScaled = true
+hardcrashbutton.TextSize = 25.000
+hardcrashbutton.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 36)
+UICorner_2.Parent = hardcrashbutton
+
+item.Name = "item"
+item.Parent = wutgmain
+item.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+item.BorderColor3 = Color3.fromRGB(255, 255, 255)
+item.BorderSizePixel = 5
+item.Position = UDim2.new(0.016954843, 0, 0.0883501992, 0)
+item.Size = UDim2.new(0.300847471, 0, 0.822299719, 0)
+item.Visible = false
+item.ZIndex = 2
+
+itemtext.Name = "itemtext"
+itemtext.Parent = item
+itemtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+itemtext.BackgroundTransparency = 1.000
+itemtext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+itemtext.BorderSizePixel = 0
+itemtext.Size = UDim2.new(1, 0, 0.394067824, 0)
+itemtext.ZIndex = 3
+itemtext.Font = Enum.Font.GothamMedium
+itemtext.Text = "Item"
+itemtext.TextColor3 = Color3.fromRGB(255, 255, 255)
+itemtext.TextScaled = true
+itemtext.TextSize = 14.000
+itemtext.TextWrapped = true
+
+execute.Name = "execute"
+execute.Parent = item
+execute.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+execute.BackgroundTransparency = 0.500
+execute.BorderColor3 = Color3.fromRGB(255, 255, 255)
+execute.BorderSizePixel = 3
+execute.Position = UDim2.new(0.116133139, 0, 0.839145482, 0)
+execute.Size = UDim2.new(0.767605662, 0, 0.0932203382, 0)
+execute.ZIndex = 3
+execute.Font = Enum.Font.GothamMedium
+execute.Text = "Execute"
+execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+execute.TextScaled = true
+execute.TextSize = 14.000
+execute.TextWrapped = true
+
+UICorner_3.Parent = execute
+
+UICorner_4.Parent = item
+
+TextLabel.Parent = wutgmain
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -0.00150830485, 0)
+TextLabel.Size = UDim2.new(0.145864502, 0, 0.0612097643, 0)
+TextLabel.ZIndex = 3
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "VERSION 5.1"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_5.Parent = wutgmain
+
+TextLabel_2.Parent = wutgmain
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.554112554, 0, 0.0283424444, 0)
+TextLabel_2.Size = UDim2.new(0.308055669, 0, 0.193050563, 0)
+TextLabel_2.ZIndex = 3
+TextLabel_2.Font = Enum.Font.GothamMedium
+TextLabel_2.Text = "Quick Crash"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+harmonicabutton.Name = "harmonicabutton"
+harmonicabutton.Parent = wutgmain
+harmonicabutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+harmonicabutton.BackgroundTransparency = 0.500
+harmonicabutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+harmonicabutton.BorderSizePixel = 5
+harmonicabutton.Position = UDim2.new(0.543695867, 0, 0.375275254, 0)
+harmonicabutton.Size = UDim2.new(0.319915265, 0, 0.111498259, 0)
+harmonicabutton.ZIndex = 2
+harmonicabutton.Font = Enum.Font.GothamMedium
+harmonicabutton.Text = "HARMONICA"
+harmonicabutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+harmonicabutton.TextScaled = true
+harmonicabutton.TextSize = 25.000
+harmonicabutton.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 36)
+UICorner_6.Parent = harmonicabutton
+
+TextLabel_3.Parent = wutgmain
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.543695867, 0, 0.471128553, 0)
+TextLabel_3.Size = UDim2.new(0.319915295, 0, 0.193050563, 0)
+TextLabel_3.ZIndex = 3
+TextLabel_3.Font = Enum.Font.GothamMedium
+TextLabel_3.Text = "Trolling"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+infammobutton.Name = "infammobutton"
+infammobutton.Parent = wutgmain
+infammobutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+infammobutton.BackgroundTransparency = 0.500
+infammobutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+infammobutton.BorderSizePixel = 5
+infammobutton.Position = UDim2.new(0.542252898, 0, 0.663832545, 0)
+infammobutton.Size = UDim2.new(0.319915265, 0, 0.111498259, 0)
+infammobutton.ZIndex = 2
+infammobutton.Font = Enum.Font.GothamMedium
+infammobutton.Text = "INF GUN AMMMO"
+infammobutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+infammobutton.TextScaled = true
+infammobutton.TextSize = 25.000
+infammobutton.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 36)
+UICorner_7.Parent = infammobutton
+
+suitbutton.Name = "suitbutton"
+suitbutton.Parent = wutgmain
+suitbutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+suitbutton.BackgroundTransparency = 0.500
+suitbutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+suitbutton.BorderSizePixel = 5
+suitbutton.Position = UDim2.new(0.543695867, 0, 0.79069823, 0)
+suitbutton.Size = UDim2.new(0.319915295, 0, 0.0841350704, 0)
+suitbutton.ZIndex = 2
+suitbutton.Font = Enum.Font.GothamMedium
+suitbutton.Text = "DEVELOPER SUIT"
+suitbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+suitbutton.TextScaled = true
+suitbutton.TextSize = 25.000
+suitbutton.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 36)
+UICorner_8.Parent = suitbutton
+
+earringbutton.Name = "earringbutton"
+earringbutton.Parent = wutgmain
+earringbutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+earringbutton.BackgroundTransparency = 0.500
+earringbutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+earringbutton.BorderSizePixel = 5
+earringbutton.Position = UDim2.new(0.543695867, 0, 0.892688274, 0)
+earringbutton.Size = UDim2.new(0.319915295, 0, 0.0368713848, 0)
+earringbutton.ZIndex = 2
+earringbutton.Font = Enum.Font.GothamMedium
+earringbutton.Text = "PLAY EAR RING"
+earringbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+earringbutton.TextScaled = true
+earringbutton.TextSize = 25.000
+earringbutton.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 36)
+UICorner_9.Parent = earringbutton
+
+gunsoundsbutton.Name = "gunsoundsbutton"
+gunsoundsbutton.Parent = wutgmain
+gunsoundsbutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+gunsoundsbutton.BackgroundTransparency = 0.500
+gunsoundsbutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+gunsoundsbutton.BorderSizePixel = 5
+gunsoundsbutton.Position = UDim2.new(0.543695867, 0, 0.947414637, 0)
+gunsoundsbutton.Size = UDim2.new(0.319915295, 0, 0.0368713848, 0)
+gunsoundsbutton.ZIndex = 2
+gunsoundsbutton.Font = Enum.Font.GothamMedium
+gunsoundsbutton.Text = "PLAY GUN SOUNDS"
+gunsoundsbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+gunsoundsbutton.TextScaled = true
+gunsoundsbutton.TextSize = 25.000
+gunsoundsbutton.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 36)
+UICorner_10.Parent = gunsoundsbutton
+
+TextBox.Parent = wutgmain
+TextBox.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.887445867, 0, 0.664179146, 0)
+TextBox.Size = UDim2.new(0.0880230889, 0, 0.0547263734, 0)
+TextBox.Font = Enum.Font.GothamMedium
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderText = "Gear Id Here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_11.Parent = TextBox
+
+submitgearbutton.Name = "submitgearbutton"
+submitgearbutton.Parent = wutgmain
+submitgearbutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+submitgearbutton.BackgroundTransparency = 0.500
+submitgearbutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+submitgearbutton.BorderSizePixel = 5
+submitgearbutton.Position = UDim2.new(0.88713026, 0, 0.753384769, 0)
+submitgearbutton.Size = UDim2.new(0.0883386806, 0, 0.0696517453, 0)
+submitgearbutton.ZIndex = 2
+submitgearbutton.Font = Enum.Font.GothamMedium
+submitgearbutton.Text = "Submit"
+submitgearbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+submitgearbutton.TextScaled = true
+submitgearbutton.TextSize = 25.000
+submitgearbutton.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0, 36)
+UICorner_12.Parent = submitgearbutton
+
+xbutton.Name = "xbutton"
+xbutton.Parent = wutgmain
+xbutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+xbutton.BackgroundTransparency = 0.700
+xbutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+xbutton.BorderSizePixel = 5
+xbutton.Position = UDim2.new(0.88713026, 0, 0.753384769, 0)
+xbutton.Size = UDim2.new(0.0883386806, 0, 0.0696517453, 0)
+xbutton.ZIndex = 2
+xbutton.Font = Enum.Font.GothamMedium
+xbutton.Text = "x"
+xbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+xbutton.TextScaled = true
+xbutton.TextSize = 25.000
+xbutton.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 36)
+UICorner_13.Parent = xbutton
+
+f3xbutton.Name = "f3xbutton"
+f3xbutton.Parent = wutgmain
+f3xbutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+f3xbutton.BackgroundTransparency = 0.500
+f3xbutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+f3xbutton.BorderSizePixel = 5
+f3xbutton.Position = UDim2.new(0.88713026, 0, 0.857862413, 0)
+f3xbutton.Size = UDim2.new(0.0883386806, 0, 0.0696517453, 0)
+f3xbutton.ZIndex = 2
+f3xbutton.Font = Enum.Font.GothamMedium
+f3xbutton.Text = "F3X/Btools"
+f3xbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+f3xbutton.TextScaled = true
+f3xbutton.TextSize = 25.000
+f3xbutton.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0, 36)
+UICorner_14.Parent = f3xbutton
+
+xbutton_2.Name = "xbutton"
+xbutton_2.Parent = wutgmain
+xbutton_2.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+xbutton_2.BackgroundTransparency = 0.700
+xbutton_2.BorderColor3 = Color3.fromRGB(79, 79, 79)
+xbutton_2.BorderSizePixel = 5
+xbutton_2.Position = UDim2.new(0.88713026, 0, 0.857862413, 0)
+xbutton_2.Size = UDim2.new(0.0883386806, 0, 0.0696517453, 0)
+xbutton_2.ZIndex = 2
+xbutton_2.Font = Enum.Font.GothamMedium
+xbutton_2.Text = "x"
+xbutton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+xbutton_2.TextScaled = true
+xbutton_2.TextSize = 25.000
+xbutton_2.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0, 36)
+UICorner_15.Parent = xbutton_2
+
+divider.Name = "divider"
+divider.Parent = wutgmain
+divider.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+divider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+divider.BorderSizePixel = 0
+divider.Position = UDim2.new(0.869000018, 0, 0.83099997, 0)
+divider.Size = UDim2.new(0.124098122, 0, 0.0223880615, 0)
+
+UICorner_16.Parent = divider
+
+TextLabel_4.Parent = wutgmain
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0, 0.962339997, 0)
+TextLabel_4.Size = UDim2.new(0.059859369, 0, 0.0376600623, 0)
+TextLabel_4.ZIndex = 3
+TextLabel_4.Font = Enum.Font.GothamMedium
+TextLabel_4.Text = "X = WIP"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+rpnamebutton.Name = "rpnamebutton"
+rpnamebutton.Parent = wutgmain
+rpnamebutton.BackgroundColor3 = Color3.fromRGB(98, 0, 0)
+rpnamebutton.BackgroundTransparency = 0.500
+rpnamebutton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+rpnamebutton.BorderSizePixel = 5
+rpnamebutton.Position = UDim2.new(0.874458671, 0, 0.469802767, 0)
+rpnamebutton.Size = UDim2.new(0.113997139, 0, 0.153786823, 0)
+rpnamebutton.ZIndex = 2
+rpnamebutton.Font = Enum.Font.GothamMedium
+rpnamebutton.Text = "CHANGE EVERYONES RP NAME"
+rpnamebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+rpnamebutton.TextScaled = true
+rpnamebutton.TextSize = 25.000
+rpnamebutton.TextWrapped = true
+
+UICorner_17.CornerRadius = UDim.new(0, 36)
+UICorner_17.Parent = rpnamebutton
+
+divider_2.Name = "divider"
+divider_2.Parent = wutgmain
+divider_2.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+divider_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+divider_2.BorderSizePixel = 0
+divider_2.Position = UDim2.new(0.873000026, 0, 0.632000029, 0)
+divider_2.Size = UDim2.new(0.124098122, 0, 0.0223880615, 0)
+
+UICorner_18.Parent = divider_2
+
+rpname.Name = "rpname"
+rpname.Parent = wutgmain
+rpname.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+rpname.BorderColor3 = Color3.fromRGB(255, 85, 0)
+rpname.BorderSizePixel = 4
+rpname.Position = UDim2.new(0.999435067, 0, -0.00134167273, 0)
+rpname.Size = UDim2.new(0.340548337, 0, 1.00000012, 0)
+rpname.Visible = false
+
+TextLabel_5.Parent = rpname
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Size = UDim2.new(0.995762706, 0, 0.199004978, 0)
+TextLabel_5.Font = Enum.Font.GothamMedium
+TextLabel_5.Text = "Change RP Names (Beta)"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextBox_2.Parent = rpname
+TextBox_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextBox_2.BackgroundTransparency = 0.500
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.0381355919, 0, 0.221393034, 0)
+TextBox_2.Size = UDim2.new(0.919491529, 0, 0.186567143, 0)
+TextBox_2.Font = Enum.Font.GothamMedium
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox_2.PlaceholderText = "Write anything here"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+UICorner_19.Parent = TextBox_2
+
+TextButton.Parent = rpname
+TextButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0796157047, 0, 0.460198998, 0)
+TextButton.Size = UDim2.new(0.838983059, 0, 0.293532342, 0)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "Submit"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+wutglogo.Name = "wutglogo"
+wutglogo.Parent = WUTG
+wutglogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wutglogo.BackgroundTransparency = 1.000
+wutglogo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+wutglogo.BorderSizePixel = 0
+wutglogo.Position = UDim2.new(0.326999992, 0, 1.4159534, 0)
+wutglogo.Size = UDim2.new(0.30660376, 0, 0.676384866, 0)
+wutglogo.Image = "http://www.roblox.com/asset/?id=16070829218"
+wutglogo.ScaleType = Enum.ScaleType.Crop
+
+-- Scripts:
+
+local function CPLLU_fake_script() -- wutgmain.Dragging 
+	local script = Instance.new('LocalScript', wutgmain)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(CPLLU_fake_script)()
+local function SFHBCZM_fake_script() -- wutgmain.ExecuteHandler 
+	local script = Instance.new('LocalScript', wutgmain)
+
+	--Values
+	local hardcrashvalue = false
+	local harmonicavalue = false
+	local infammovalue = false
+	local developersuitvalue = false
+	local earringvalue = false
+	local gunsoundvalue = false
+	--Values
+	local itemtext = script.Parent.item.itemtext --itemtext to manage changing it
+	local itemexecutor = script.Parent.item.execute
+	local itemframe = script.Parent.item
+	
+	----------------------------------------------
+	--Button Clicking to open execute tab functions
+	
+	local function hardcrash()
+		itemframe.Visible = true
+		harmonicavalue = false
+		infammovalue = false
+		developersuitvalue = false
+		earringvalue = false
+		gunsoundvalue = false
+		hardcrashvalue = true
+		itemtext.Text = "Hardcrash"
+	end
+	
+	
+	local function harmonica()
+		itemframe.Visible = true
+		hardcrashvalue = false
+		infammovalue = false
+		developersuitvalue = false
+		earringvalue = false
+		gunsoundvalue = false
+		harmonicavalue = true
+		itemtext.Text = "Harmonica"
+	end
+	
+	local function infgun()
+		itemframe.Visible = true
+		harmonicavalue = false
+		hardcrashvalue = false
+		developersuitvalue = false
+		earringvalue = false
+		gunsoundvalue = false
+		infammovalue = true
+		itemtext.Text = "Inf Ammo"
+	end
+	
+	local function developersuit()
+		itemframe.Visible = true
+		harmonicavalue = false
+		hardcrashvalue = false
+		infammovalue = false
+		earringvalue = false
+		gunsoundvalue = false
+		developersuitvalue = true
+		itemtext.Text = "Developer Suit"
+	end
+	
+	local function earring()
+		itemframe.Visible = true
+		harmonicavalue = false
+		hardcrashvalue = false
+		infammovalue = false
+		gunsoundvalue = false
+		developersuitvalue = false
+		earringvalue = true
+		itemtext.Text = "Ear Ring"
+	end
+	
+	local function gunsounds()
+		itemframe.Visible = true
+		harmonicavalue = false
+		hardcrashvalue = false
+		infammovalue = false
+		earringvalue = false
+		gunsoundvalue = true
+		itemtext.Text = "Gun Sounds"
+	end
+	
+	--Button Clicking to open execute tab functions
+	-----------------------------------------------
+	--Connecting buttons to open execute tab when clicked
+	script.Parent.hardcrashbutton.MouseButton1Up:Connect(hardcrash)
+	
+	script.Parent.harmonicabutton.MouseButton1Up:Connect(harmonica)
+	
+	script.Parent.infammobutton.MouseButton1Up:Connect(infgun)
+	
+	script.Parent.suitbutton.MouseButton1Up:Connect(developersuit)
+	
+	script.Parent.earringbutton.MouseButton1Up:Connect(earring)
+	
+	script.Parent.gunsoundsbutton.MouseButton1Up:Connect(gunsounds)
+	--Connecting buttons to open execute tab when clicked
+	-----------------------------------------------------
+	
+	
+	--Execute Functions when the execute button is clicked, it will check the current value then execute the value that its assigned to
+	local function hardcrashexecute()
+		if hardcrashvalue == true then
+			for i = 1, 300 do
+				game:GetService('ReplicatedStorage')['ACS_Engine'].SignalEvents.ModFair.ServerBullet:FireServer(Vector3.new(0/0/0),Vector3.new(0/0/0))
+				end
+			end
+		end 
+	
+	
+	local function infammoexecute()
+		if infammovalue == true then
+			g = hookfunction(wait, function(seconds)
+				return g(0)
+			end)
+			end
+		end 
+	
+	local function developersuitexecute()
+		if developersuitvalue == true then
+			local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+	
+			a.CFrame = CFrame.new(-424.439331, 2.8392899, -2557.05762, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		end
+	end 
+	
+	local function earringexecute()
+		if earringvalue == true then
+			while task.wait() do
+	
+				for _, player in next, game.Players:GetPlayers() do
+					game:GetService("ReplicatedStorage")["ACS_Engine"].SignalEvents.Suppression:FireServer(player, 99999, 99999, 999999)
+				end
+			end
+		end
+	end
+	
+	local function gunsoundexecute()
+		if gunsoundvalue == true then
+			while task.wait() do
+	
+				for _, player in next, game.Players:GetPlayers() do
+					game:GetService('ReplicatedStorage')['ACS_Engine'].SignalEvents.Whizz:FireServer(player)
+				end
+			end
+		end
+	end
+	
+	
+	local function harmonicacrashexecute()
+		if harmonicavalue == true then
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+			game.ReplicatedStorage.PutOnClothes:FireServer("33070696")
+		end
+	end
+	--Execute Functions when the execute button is clicked, it will check the current value then execute the value that its assigned to
+	------------------------------------------------
+	
+	--connect buttons for the actual execute button when its clicked
+	itemexecutor.MouseButton1Up:Connect(harmonicacrashexecute)
+	itemexecutor.MouseButton1Up:Connect(hardcrashexecute)
+	itemexecutor.MouseButton1Up:Connect(infammoexecute)
+	itemexecutor.MouseButton1Up:Connect(developersuitexecute)
+	itemexecutor.MouseButton1Up:Connect(earringexecute)
+	itemexecutor.MouseButton1Up:Connect(gunsoundexecute)
+	---------------------------------------------------------------
+end
+coroutine.wrap(SFHBCZM_fake_script)()
+local function WLMVIG_fake_script() -- rpnamebutton.LocalScript 
+	local script = Instance.new('LocalScript', rpnamebutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.rpname.Visible = not script.Parent.Parent.rpname.Visible
+	end)
+end
+coroutine.wrap(WLMVIG_fake_script)()
+local function MUTMQKT_fake_script() -- TextBox_2.handlerpname 
+	local script = Instance.new('LocalScript', TextBox_2)
+
+	local playerService = game:GetService("Players")
+	local function connectPlayer(plr)
+		local function updateName()
+			local character = plr.Character
+			local remoteEvent = character:FindFirstChildWhichIsA("RemoteEvent", true)
+	
+			character.Name = script.Parent.Text
+	
+			remoteEvent:FireServer(script.Parent.Text)
+		end
+	
+		local function handleCharacter()
+			local character = plr.Character
+			character:GetPropertyChangedSignal("Name"):Connect(function()
+				if character.Name ~= script.Parent.Text then
+					updateName()
+				end
+			end)
+		end
+	
+		if plr.Character then
+			handleCharacter()
+		end
+	
+		plr.CharacterAdded:Connect(handleCharacter)
+		script.Parent.Parent.TextButton.MouseButton1Up:Connect(updateName)
+	end
+	
+	for i,v in ipairs(playerService:GetPlayers()) do
+		connectPlayer(v)
+	end
+	
+	playerService.PlayerAdded:Connect(connectPlayer)
+end
+coroutine.wrap(MUTMQKT_fake_script)()
+local function DNETA_fake_script() -- WUTG.LocalScript 
+	local script = Instance.new('LocalScript', WUTG)
+
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("wutgmain")
+	local Button = SGui:WaitForChild("oben")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+end
+coroutine.wrap(DNETA_fake_script)()
+local function WYPVUT_fake_script() -- WUTG.handletweeningimage 
+	local script = Instance.new('LocalScript', WUTG)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local function tweean(object)
+		local rotationInfo = TweenInfo.new(2, Enum.EasingStyle.Bounce, Enum.EasingDirection.InOut)
+		local position = UDim2.new(0.327, 0, 0.144, 0)
+	
+		local rotationTween = TweenService:Create(object, rotationInfo, {Position = position})
+	
+		rotationTween:Play()
+	end
+	
+	wait(2)
+	tweean(script.Parent.wutglogo)
+	wait(3)
+	script.Parent.wutglogo:Destroy()
+	script.Parent.oben.Visible = true
+end
+coroutine.wrap(WYPVUT_fake_script)()
