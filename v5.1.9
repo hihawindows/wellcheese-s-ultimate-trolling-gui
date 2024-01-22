@@ -799,7 +799,7 @@ local function TRUFRDR_fake_script() -- wutgmain.ExecuteHandler
 	--Execute Functions when the execute button is clicked, it will check the current value then execute the value that its assigned to
 	local function hardcrashexecute()
 		if hardcrashvalue == true then
-			for i = 1, 300 do
+			for i = 1, 30 do
 				game:GetService('ReplicatedStorage')['ACS_Engine'].SignalEvents.ModFair.ServerBullet:FireServer(Vector3.new(0/0/0),Vector3.new(0/0/0))
 				end
 			end
