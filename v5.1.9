@@ -65,7 +65,7 @@ local wutglogo = Instance.new("ImageLabel")
 --Properties:
 
 WUTG.Name = "WUTG"
-WUTG.Parent = game.ReplicatedStorage.Versions["v5.1.9"]
+WUTG.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 WUTG.ResetOnSpawn = false
 
 oben.Name = "oben"
@@ -635,7 +635,7 @@ wutglogo.ScaleType = Enum.ScaleType.Crop
 
 -- Scripts:
 
-local function DUUMO_fake_script() -- wutgmain.Dragging 
+local function WXQM_fake_script() -- wutgmain.Dragging 
 	local script = Instance.new('LocalScript', wutgmain)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -692,8 +692,8 @@ local function DUUMO_fake_script() -- wutgmain.Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(DUUMO_fake_script)()
-local function XEUA_fake_script() -- wutgmain.ExecuteHandler 
+coroutine.wrap(WXQM_fake_script)()
+local function FLVRXNU_fake_script() -- wutgmain.ExecuteHandler 
 	local script = Instance.new('LocalScript', wutgmain)
 
 	--Values
@@ -1940,16 +1940,16 @@ local function XEUA_fake_script() -- wutgmain.ExecuteHandler
 	itemexecutor.MouseButton1Up:Connect(gunsoundexecute)
 	---------------------------------------------------------------
 end
-coroutine.wrap(XEUA_fake_script)()
-local function LAIYGI_fake_script() -- rpnamebutton.LocalScript 
+coroutine.wrap(FLVRXNU_fake_script)()
+local function RGCOU_fake_script() -- rpnamebutton.LocalScript 
 	local script = Instance.new('LocalScript', rpnamebutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.rpname.Visible = not script.Parent.Parent.rpname.Visible
 	end)
 end
-coroutine.wrap(LAIYGI_fake_script)()
-local function MLNDB_fake_script() -- TextBox_2.handlerpname 
+coroutine.wrap(RGCOU_fake_script)()
+local function OEYND_fake_script() -- TextBox_2.handlerpname 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local playerService = game:GetService("Players")
@@ -1986,8 +1986,8 @@ local function MLNDB_fake_script() -- TextBox_2.handlerpname
 	
 	playerService.PlayerAdded:Connect(connectPlayer)
 end
-coroutine.wrap(MLNDB_fake_script)()
-local function QSOLQGP_fake_script() -- ticketchanger.handlertickeychangker 
+coroutine.wrap(OEYND_fake_script)()
+local function MIEAAC_fake_script() -- ticketchanger.handlertickeychangker 
 	local script = Instance.new('LocalScript', ticketchanger)
 
 	local Players = game:GetService("Players")
@@ -2024,8 +2024,8 @@ local function QSOLQGP_fake_script() -- ticketchanger.handlertickeychangker
 	script.Parent.sumballtype.MouseButton1Click:Connect(handleall)
 	
 end
-coroutine.wrap(QSOLQGP_fake_script)()
-local function UCTCW_fake_script() -- tickchanger.LocalScript 
+coroutine.wrap(MIEAAC_fake_script)()
+local function TBXRX_fake_script() -- tickchanger.LocalScript 
 	local script = Instance.new('LocalScript', tickchanger)
 
 	local Frame = script.Parent.Parent.ticketchanger
@@ -2035,8 +2035,8 @@ local function UCTCW_fake_script() -- tickchanger.LocalScript
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(UCTCW_fake_script)()
-local function MCOXMJ_fake_script() -- WUTG.LocalScript 
+coroutine.wrap(TBXRX_fake_script)()
+local function ANJP_fake_script() -- WUTG.LocalScript 
 	local script = Instance.new('LocalScript', WUTG)
 
 	local SGui = script.Parent
@@ -2047,8 +2047,8 @@ local function MCOXMJ_fake_script() -- WUTG.LocalScript
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(MCOXMJ_fake_script)()
-local function ABTIZF_fake_script() -- WUTG.handletweeningimage 
+coroutine.wrap(ANJP_fake_script)()
+local function LSBJF_fake_script() -- WUTG.handletweeningimage 
 	local script = Instance.new('LocalScript', WUTG)
 
 	local TweenService = game:GetService("TweenService")
@@ -2068,4 +2068,4 @@ local function ABTIZF_fake_script() -- WUTG.handletweeningimage
 	script.Parent.wutglogo:Destroy()
 	script.Parent.oben.Visible = true
 end
-coroutine.wrap(ABTIZF_fake_script)()
+coroutine.wrap(LSBJF_fake_script)()
