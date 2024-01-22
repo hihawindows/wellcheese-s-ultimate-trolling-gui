@@ -65,7 +65,7 @@ local wutglogo = Instance.new("ImageLabel")
 --Properties:
 
 WUTG.Name = "WUTG"
-WUTG.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WUTG.Parent = game.ReplicatedStorage.Versions["v5.1.9"]
 WUTG.ResetOnSpawn = false
 
 oben.Name = "oben"
@@ -635,7 +635,7 @@ wutglogo.ScaleType = Enum.ScaleType.Crop
 
 -- Scripts:
 
-local function FBIE_fake_script() -- wutgmain.Dragging 
+local function DUUMO_fake_script() -- wutgmain.Dragging 
 	local script = Instance.new('LocalScript', wutgmain)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -692,8 +692,8 @@ local function FBIE_fake_script() -- wutgmain.Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(FBIE_fake_script)()
-local function EZENG_fake_script() -- wutgmain.ExecuteHandler 
+coroutine.wrap(DUUMO_fake_script)()
+local function XEUA_fake_script() -- wutgmain.ExecuteHandler 
 	local script = Instance.new('LocalScript', wutgmain)
 
 	--Values
@@ -1940,16 +1940,16 @@ local function EZENG_fake_script() -- wutgmain.ExecuteHandler
 	itemexecutor.MouseButton1Up:Connect(gunsoundexecute)
 	---------------------------------------------------------------
 end
-coroutine.wrap(EZENG_fake_script)()
-local function ZEBHW_fake_script() -- rpnamebutton.LocalScript 
+coroutine.wrap(XEUA_fake_script)()
+local function LAIYGI_fake_script() -- rpnamebutton.LocalScript 
 	local script = Instance.new('LocalScript', rpnamebutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.rpname.Visible = not script.Parent.Parent.rpname.Visible
 	end)
 end
-coroutine.wrap(ZEBHW_fake_script)()
-local function SEQF_fake_script() -- TextBox_2.handlerpname 
+coroutine.wrap(LAIYGI_fake_script)()
+local function MLNDB_fake_script() -- TextBox_2.handlerpname 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local playerService = game:GetService("Players")
@@ -1986,27 +1986,34 @@ local function SEQF_fake_script() -- TextBox_2.handlerpname
 	
 	playerService.PlayerAdded:Connect(connectPlayer)
 end
-coroutine.wrap(SEQF_fake_script)()
-local function MSNYKV_fake_script() -- ticketchanger.handlertickeychangker 
+coroutine.wrap(MLNDB_fake_script)()
+local function QSOLQGP_fake_script() -- ticketchanger.handlertickeychangker 
 	local script = Instance.new('LocalScript', ticketchanger)
 
-	-- handle username
+	local Players = game:GetService("Players")
 	local usernametext = script.Parent.textboxusernameneeded
 	local ticketstext = script.Parent.textboxticketsneeded
-	local Players = game:GetService("Players")
 	
+	-- handle username
 	script.Parent.sumbusernametype.MouseButton1Click:Connect(function()
-		game:GetService('ReplicatedStorage')['ACS_Engine'].SignalEvents.Refil:FireServer(game:GetService('Players')[usernametext.Text]['leaderstats'].Tickets.Value, tonumber(ticketstext.Text))
+		local player = Players:FindFirstChild(usernametext.Text)
+		if player then
+			local leaderstats = player:FindFirstChild("leaderstats")
+			if leaderstats then
+				local Tickets = leaderstats:FindFirstChild("Tickets")
+				if Tickets then
+					game:GetService('ReplicatedStorage')['ACS_Engine'].SignalEvents.Refil:FireServer(Tickets.Value, tonumber(ticketstext.Text))
+				end
+			end
+		end
 	end)
 	
 	-- handle all
 	local function handleall()
 		for _, player in pairs(Players:GetPlayers()) do
 			local leaderstats = player:FindFirstChild("leaderstats")
-	
 			if leaderstats then
 				local Tickets = leaderstats:FindFirstChild("Tickets")
-	
 				if Tickets then
 					game:GetService('ReplicatedStorage')['ACS_Engine'].SignalEvents.Refil:FireServer(Tickets.Value, tonumber(script.Parent.textboxticketsall.Text))
 				end
@@ -2015,9 +2022,10 @@ local function MSNYKV_fake_script() -- ticketchanger.handlertickeychangker
 	end
 	
 	script.Parent.sumballtype.MouseButton1Click:Connect(handleall)
+	
 end
-coroutine.wrap(MSNYKV_fake_script)()
-local function MSCBTB_fake_script() -- tickchanger.LocalScript 
+coroutine.wrap(QSOLQGP_fake_script)()
+local function UCTCW_fake_script() -- tickchanger.LocalScript 
 	local script = Instance.new('LocalScript', tickchanger)
 
 	local Frame = script.Parent.Parent.ticketchanger
@@ -2027,8 +2035,8 @@ local function MSCBTB_fake_script() -- tickchanger.LocalScript
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(MSCBTB_fake_script)()
-local function GABTZZ_fake_script() -- WUTG.LocalScript 
+coroutine.wrap(UCTCW_fake_script)()
+local function MCOXMJ_fake_script() -- WUTG.LocalScript 
 	local script = Instance.new('LocalScript', WUTG)
 
 	local SGui = script.Parent
@@ -2039,8 +2047,8 @@ local function GABTZZ_fake_script() -- WUTG.LocalScript
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(GABTZZ_fake_script)()
-local function RDKUO_fake_script() -- WUTG.handletweeningimage 
+coroutine.wrap(MCOXMJ_fake_script)()
+local function ABTIZF_fake_script() -- WUTG.handletweeningimage 
 	local script = Instance.new('LocalScript', WUTG)
 
 	local TweenService = game:GetService("TweenService")
@@ -2060,4 +2068,4 @@ local function RDKUO_fake_script() -- WUTG.handletweeningimage
 	script.Parent.wutglogo:Destroy()
 	script.Parent.oben.Visible = true
 end
-coroutine.wrap(RDKUO_fake_script)()
+coroutine.wrap(ABTIZF_fake_script)()
